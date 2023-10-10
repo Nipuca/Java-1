@@ -1,4 +1,7 @@
+package homework1;
+
 import java.util.Scanner;
+
 public class Main2 {
     public static void main(String[] args) {
         double num1;
@@ -11,19 +14,25 @@ public class Main2 {
         num2 = reader.nextDouble();
         System.out.print("\nEnter an operator (+, -, *, /): ");
         op = reader.next().charAt(0);
-        switch(op) {
-            case '+': ans = num1 + num2;
+        switch (op) {
+            case '+':
+                ans = num1 + num2;
                 break;
-            case '-': ans = num1 - num2;
+            case '-':
+                ans = num1 - num2;
                 break;
-            case '*': ans = num1 * num2;
+            case '*':
+                ans = num1 * num2;
                 break;
-            case '/': ans = num1 / num2;
+            case '/':
+                ans = num1 / num2;
                 break;
-            default:  System.out.printf("Error! Enter correct operator");
+            default:
+                System.out.printf("Error! Enter correct operator");
                 return;
         }
         System.out.print("\nThe result is given as follows:\n");
         System.out.printf(num1 + " " + op + " " + num2 + " = " + ans);
     }
 }
+
