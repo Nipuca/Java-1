@@ -1,72 +1,72 @@
 
-public class Car{
-    private String назва;
-    private String модель;
-    private int рікВипуску;
-    private double ціна;
-    private boolean включено;
+public class Car {
+    private String Bmw;
+    private String e60;
+    private int d2009;
+    private double price;
+    private boolean included;
 
-    public Машина(String назва, String модель, int рікВипуску, double ціна, boolean включено) {
-        this.назва = назва;
-        this.модель = модель;
-        this.рікВипуску = рікВипуску;
-        this.ціна = ціна;
-        this.включено = включено;
+    public Car(String Bmw, String e60, int d2009, double price, boolean included) {
+        this.Bmw = Bmw;
+        this.e60 = e60;
+        this.d2009 = d2009;
+        this.price = price;
+        this.included = included;
     }
 
-    public String getНазва() {
-        return назва;
+    public String getBmw() {
+        return Bmw;
     }
 
-    public void setНазва(String назва) {
-        this.назва = назва;
+    public void setBmw(String Bmw) {
+        this.Bmw = Bmw;
     }
 
-    public String getМодель() {
-        return модель;
+    public String gete60() {
+        return e60;
     }
 
-    public void setМодель(String модель) {
-        this.модель = модель;
+    public void setE60(String e60) {
+        this.e60 = e60;
     }
 
-    public int getРікВипуску() {
-        return рікВипуску;
+    public int getd2009() {
+        return d2009;
     }
 
-    public void setРікВипуску(int рікВипуску) {
-        this.рікВипуску = рікВипуску;
+    public void set2009(int d2009) {
+        this.d2009 = d2009;
     }
 
-    public double getЦіна() {
-        return ціна;
+    public double getPrice() {
+        return price;
     }
 
-    public void setЦіна(double ціна) {
-        this.ціна = ціна;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
-    public boolean isВключено() {
-        return включено;
+    public boolean isIncluded() {
+        return included;
     }
 
-    public void setВключено(boolean включено) {
-        this.включено = включено;
+    public void setIncluded(boolean included) {
+        this.included = included;
     }
 
     @Override
     public String toString() {
         return "Машина{" +
-                "назва='" + назва + '\'' +
-                ", модель='" + модель + '\'' +
-                ", рікВипуску=" + рікВипуску +
-                ", ціна=" + ціна +
-                ", включено=" + включено +
+                "Bmw='" + Bmw + '\'' +
+                ", e60='" + e60 + '\'' +
+                ", d2009=" + d2009 +
+                ", price=" + price +
+                ", included=" + included +
                 '}';
     }
 
     public static void main(String[] args) {
-        Машина машина = new Машина("Bwm", "first", 2010, 10000, true);
-        System.out.println(машина.toString());
+        Car Bmw = new Bmw("Bwm", "first", 2010, 10000, true);
+        System.out.println(Bmw.toString());
     }
 }
